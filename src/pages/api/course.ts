@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { prisma } from "../../../prisma/src/index";
+import { prisma } from "@db/prisma";
 
 const handler = async (_req: NextApiRequest, res: NextApiResponse) => {
   switch (_req.method) {
