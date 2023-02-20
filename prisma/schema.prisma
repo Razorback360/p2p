@@ -27,6 +27,7 @@ model Subsection {
 
 model Content {
   id            Int     @id @default(autoincrement())
+  title         String
   uploaderName  String
   uploaderEmail String?
   link          String
@@ -38,6 +39,6 @@ model Content {
 model Code {
   id              String @id @default(uuid())
   submissionCount Int?
-  submissionTime  Int?
+  submissionTime  DateTime?
   uses            Int
 }

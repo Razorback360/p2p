@@ -16,7 +16,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@p2p/*": ["./src/*"],
+      "@p2p/*": ["./*"],
       "@db/prisma": ["./prisma/src/index"]
     }
   },

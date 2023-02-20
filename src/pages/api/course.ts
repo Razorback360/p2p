@@ -45,7 +45,7 @@ const handler = async (_req: NextApiRequest, res: NextApiResponse) => {
 
       if (id && subsectionNames) {
         if (typeof subsectionNames === "object") {
-          subsectionNames.forEach((value) => {
+          subsectionNames.forEach((value: string) => {
             subsectionList.push({ name: value });
           });
 

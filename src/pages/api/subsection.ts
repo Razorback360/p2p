@@ -5,7 +5,7 @@ const handler = async (_req: NextApiRequest, res: NextApiResponse) => {
   switch (_req.method) {
     case "GET": {
       const id = _req.query.id ? parseInt(_req.query.id as string) : null;
-
+      
       if (!id)
         return res.status(404).json({ error: "No subsection was provided." });
       const subsection = await prisma.subsection.findFirst({
